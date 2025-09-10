@@ -7,7 +7,7 @@ const generate = async (queryDescription) => {
     messages: [
       {
         role: "user",
-        content: `Convert the following natural language description into a SQL query: \n\n${queryDescription}.`,
+        content: `Convert the following natural language description into a SQL query and only return the raw SQL code, no markdown, no explanation, no sql fences: \n\n${queryDescription}.`,
       },
     ],
   });
